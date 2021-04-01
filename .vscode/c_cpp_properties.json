@@ -1,0 +1,26 @@
+{
+    "configurations": [
+        {
+            "name": "Linux",
+            "includePath": [
+                "${workspaceFolder}/**",
+                "cube/**",
+                "cube/Core/Inc",
+                "cube/Middlewares/Third_Party/FreeRTOS/Source/portable/GCC/ARM_CM7/r0p1",
+                "cube/Middlewares/Third_Party/FreeRTOS/Source/include",
+                "cube/Middlewares/Third_Party/FreeRTOS/Source/CMSIS_RTOS_V2",
+                "cube/Drivers/STM32F7xx_HAL_Driver/Inc/Legacy",
+                "cube/Drivers/STM32F7xx_HAL_Driver/Inc",
+                "cube/Drivers/CMSIS/Include",
+                "cube/Drivers/CMSIS/Device/ST/STM32F7xx/Include",
+                "${workspaceFolder}/subprojects/canas/include"
+            ],
+            "defines": [],
+            "compilerPath": "/usr/bin/gcc",
+            "cStandard": "gnu11",
+            "cppStandard": "gnu++17",
+            "intelliSenseMode": "clang-x64"
+        }
+    ],
+    "version": 4
+}

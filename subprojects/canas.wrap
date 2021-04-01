@@ -1,0 +1,3 @@
+[wrap-git]
+revision = master
+url = https://github.com/uavos/canas.git

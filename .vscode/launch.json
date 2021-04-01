@@ -1,0 +1,36 @@
+// A launch configuration that compiles the extension and then opens it inside a new window
+{
+    "version": "0.1.0",
+    "configurations": [
+        {
+            "type": "cortex-debug",
+            "request": "launch",
+            "name": "Debug (OpenOCD)",
+            "servertype": "openocd",
+            "cwd": "${workspaceRoot}",
+            "device": "STM32F746NG",
+            "v1": false,
+            "rtos": "FreeRTOS",
+            "executable": "${workspaceRoot}/build/discoled.elf",
+            "configFiles": [
+                "/home/pavel/sources/openocd-code/build/usr/local/share/openocd/scripts/interface/stlink.cfg",
+                "/home/pavel/sources/openocd-code/build/usr/local/share/openocd/scripts/board/stm32f746g-disco.cfg"
+            ],
+            "svdFile": "/home/pavel/STM32F746.svd",
+            "swoConfig":{
+                "enabled":true,
+                "source":"probe",
+                "swoFrequency": 2000000,
+                "cpuFrequency":216000000,
+                "decoders": [
+                    {
+                        "port": 0,
+                        "type": "console",
+                        "label": "SWO output",
+                        "encoding":"ascii"
+                    }
+                ]
+            }
+        }
+    ]
+}
